@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+</head>
+
+<link rel="stylesheet" href="index.css">
+
+<body>
+    
+    <div class="flex h-100">
+
+        <div class="side">
+
+            <div class="flex justifycenter alignitemcenter side-1">
+                <span class="js-clock clock"></span>  
+                <span class="js-icon"></span>
+            </div>
+            
+                <form class="js-form form">
+                    <input class="nameInput border" type="text" placeholder="What is your name?">
+                </form>
+            
+            <div class="flex name">
+                    <h3 class="js-greetings greeting"></h3>
+            </div>
+            
+      
+            <form class="js-toDoForm toDoForm flex">
+               
+                <input class="padding" id="easy" type="radio" name="difficulty" value="easy"><label id="labelGreen"  for="easy" onClick="onClickLabel(event)">🟢&nbsp;</label>
+                <input class="padding" id="normal" type="radio" name="difficulty" value="normal" checked><label  id="labelYello" for="normal" onClick="onClickLabel(event)" >🟡&nbsp;</label>
+                <input class="padding line" id="hard" type="radio" name="difficulty" value="hard"> <label id="labelRed" for="hard" onClick="onClickLabel(event)">🔴&nbsp;</label>
+
+                <input class="js-todoInput todoInput" type="text" placeholder="Write a todo">
+            </form>
+        </div>
+    
+        <div class="flex center">
+               <div class="left flex alignitemcenter">
+                    <h1 class="h1">Do it!!!</h1>
+                    <ul class="js-toDoList toDoList flex">  </ul>
+                </div>
+          
+            <div class="right flex alignitemcenter">
+                <h1 class="h1">🥇🥇🥇</h1>
+                <ul class="js-finish finish flex"></ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <span class="js-weather"></span> -->
+    <script src="clock.js"></script>
+    <script src="gretting.js"></script>
+    <script src="todo.js"></script>
+    <!-- <script src="bg.js"></script> -->
+    <script src="mytest.js" ></script>
+    <script src="weather.js"></script>
+</body>
+</html>

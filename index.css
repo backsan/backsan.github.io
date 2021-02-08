@@ -1,0 +1,227 @@
+body{
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-color: #C8FFFF; */
+}
+.flex{
+    display: flex;
+}
+
+.justifycenter{
+    justify-content: center;
+}
+
+.alignitemcenter{
+    align-items: center;
+}
+
+.center{
+    flex: 3;
+    /* background-color:#C8FFFF; */
+    align-items: center;
+  
+}
+
+h4{
+    margin: 0;
+    margin-right: 5px;
+}
+
+.toDoList, .finish{
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .finish{
+    border: 1px solid black;
+    border-radius: 15px;
+}  */
+.h-100{
+    height: 100%;  
+}
+ 
+.side{
+    flex: 1;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-1{
+    /* margin-top: 90px; */
+    margin-top: 25%;
+}
+
+.clock{
+    font-size: 50px;
+    font-weight: 600;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form,
+.greeting,
+.hiding
+{
+    display: none;
+}
+
+.form{
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.greeting{
+    text-align: center
+}
+.showing{
+    display: block;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.bgImage{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn .5s linear
+}
+
+.toDoList > li {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#easy, #normal , #hard {
+    display: none;
+}
+
+.iconImage{
+    width: 80px;
+    height: 80px;
+}
+
+.name{
+    align-items: center;
+    justify-content: center;
+    margin: 8 0;
+}
+
+.todoInput{
+    height: 2rem;
+}
+
+.eInput{
+    height: 2.5em;
+}
+
+.toDoForm{
+    justify-content: center;
+}
+
+.nameInput{
+    height: 2rem;
+    margin: 5 50
+}
+
+
+.toDoList , .finish{
+    height: 80%;
+    width: 70%;
+}
+
+.left{
+    height: 80%;
+    width: 100%;
+    margin-top: 2%;
+    flex-direction: column;
+}
+
+.right{
+    margin-top: 2%;
+    height: 80%;
+    width: 100%;
+    flex-direction: column;
+}
+ul {
+   list-style: none; 
+
+}
+li { 
+    padding-top: 30px;
+    float: left;
+}
+li > button {
+    margin-left: 2px;
+    border-color: whitesmoke;
+    text-decoration: none;
+}
+ul li {
+    width: 100% ;
+}
+
+.fOneToDo, .fToDo{
+    
+    text-decoration: line-through;
+    
+}
+
+.oneToDo , .fOneToDo, .fToDo{
+    font-size: larger;
+    font-weight: 600;
+}
+
+
+.diff{
+    font-size: x-large;
+    margin-right: 10px;
+}
+
+button{
+    border: 1px solid rgb(37, 18, 156);
+    background-color: rgba(0,0,0,0); 
+    color: red; 
+    padding: 5px;
+    width: 30px
+}
+
+.finishBtn , .trashBtn{
+    margin-left: 10px;
+}
+
+
+button:hover{
+    color: white;
+    background-color: skyblue;
+}
+
+.cancelBtn{
+    font-size: large;
+}
+
+.h1{
+    margin-right: 30px;
+}
+@media screen and (max-width:767px){
+    .flex {
+        display: block;
+        text-align: center;
+    }
+    .h1{
+        margin: 0;
+        padding: 0;
+    }
+    .side{
+        border-radius: 0px;
+    }
+}
